@@ -1,0 +1,126 @@
+html{
+    height:100%;
+}
+
+body {
+    padding: 6.8em 1.5em 2em 1.5em;
+    min-height: 100%;
+    font-family: 'Roboto Slab';
+    font-size: 1.3em;
+    font-weight:400;
+    font-style: normal;
+}
+
+a{
+    cursor:pointer;
+}
+
+/*start section */
+#start{
+    text-align:center;
+    margin-top:2.5em;
+}
+#start a {
+    text-decoration: none;
+    font-size: 6.7em;
+    color:#4eaded;
+}
+#start a:hover{
+    color:#4eaded;
+}
+#start a .glyphicon {
+    top:0.8em;
+}
+
+/*Styles for workout page - start*/
+.workout-app-container{
+    padding-top:15px;
+}
+
+#video-panel .panel-body{
+    max-height:650px;
+    overflow:auto;
+    overflow-x:hidden;
+}
+
+#pause-overlay {
+    position:absolute;
+    top:0px;
+    width:100%;
+    height:100%;
+    opacity:0;      /*Comment this line to try our mouse event based pause and resume. */
+    z-index:10;
+
+}
+
+/*Comment this style to try our mouse event based pause and resume. */
+#pause-overlay:hover {
+    opacity:.8;
+}
+#pause-overlay .pause{
+    font-size:120pt;
+    width:140px;
+    height:140px;
+    color:#4eaded;
+}
+
+.absolute-center {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#play-video-overlay {
+    position:absolute;
+    top:0px;
+    width:100%;
+    height:100%;
+    opacity:0;
+    z-index:10;
+
+}
+#play-video-overlay:hover {
+    opacity:.6;
+}
+#play-video-overlay .video {
+    font-size:80pt;
+    width:100px;
+    height:100px;
+    color:#4eaded;
+}
+
+/*styles for spinner- start*/
+.spin {
+    -webkit-animation: spin .8s infinite linear;
+    -moz-animation: spin 1s infinite linear;
+    -o-animation: spin 1s infinite linear;
+    animation: spin 1s infinite linear;
+}
+
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/*styles for spinner- end*/
